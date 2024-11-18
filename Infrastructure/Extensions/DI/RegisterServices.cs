@@ -5,6 +5,9 @@ public static class RegisterServices
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IRoleService, RoleService>();
         services.AddScoped<IPermissionService, PermissionService>();
+        services.AddScoped<IContentService, ContentService>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IContentCategoryService, ContentCategoryService>();
 
         
         services.AddScoped(typeof(IGenericDeleteRepository<>), typeof(GenericDeleteRepository<>));
