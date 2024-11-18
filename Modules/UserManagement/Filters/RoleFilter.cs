@@ -1,0 +1,1 @@
+public record RoleFilter(string? Name):BaseFilter;
